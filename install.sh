@@ -14,6 +14,9 @@ ln -sf "$DOTFILES/ssh/.ssh/config" ~/.ssh/config
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
+mkdir -p ~/Library/Application\ Support/Cursor/User
+ln -sf "$DOTFILES/cursor/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
+ln -sf "$DOTFILES/cursor/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
 
 echo "==> Setting up Node via fnm"
 fnm install 22

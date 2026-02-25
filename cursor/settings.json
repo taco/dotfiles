@@ -1,0 +1,59 @@
+{
+  "window.commandCenter": true,
+  "workbench.colorTheme": "Gruvbox Light Hard",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "accessibility.verbosity.inlineCompletions": false,
+  "cursor.terminal.enableAiChecks": false,
+  "editor.inlineSuggest.enabled": false,
+  "cursor.completions.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnType": false, // required
+  "editor.formatOnPaste": true, // optional
+  "editor.formatOnSave": true, // optional
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "vs-code-prettier-eslint.prettierLast": false,
+  "remote.SSH.remotePlatform": {
+    "raptor": "linux",
+    "wsl": "linux",
+  },
+  "python.languageServer": "None",
+  "editor.wordWrap": "on",
+  "remote.autoForwardPortsSource": "hybrid",
+  "window.systemColorTheme": "auto",
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredDarkColorTheme": "Gruvbox Dark Medium",
+  "workbench.preferredHighContrastColorTheme": "Gruvbox Light Hard",
+  "workbench.preferredLightColorTheme": "Quiet Light",
+  "workbench.tree.indent": 24,
+  "workbench.tree.renderIndentGuides": "always",
+  "git.confirmSync": false,
+  "amp.url": "https://ampcode.com/",
+  "editor.wordBasedSuggestions": "off",
+  "amp.tab.enabled": true,
+  "git.autofetch": true,
+  "editor.accessibilitySupport": "off",
+  "peacock.darkenLightenPercentage": 10,
+  "workbench.editorAssociations": {
+    "*.db": "default",
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*",
+  }, // set as "true" to run 'prettier' last not first
+  "workbench.sideBar.location": "left",
+  "workbench.view.explorer.visible": true,
+  "terminal.integrated.defaultLocation": "bottom",
+  "cursor.cpp.enableContextPane": false,
+}
