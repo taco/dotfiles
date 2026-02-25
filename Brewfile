@@ -1,3 +1,4 @@
+brew "mas"
 brew "bat"
 brew "fnm"
 brew "gh"
