@@ -1,0 +1,103 @@
+[user]
+	emal = your@email.com
+	name = Your Name
+	email = your@email.com
+
+[alias]
+	# Status and diff
+	s = status
+	d = diff
+	dc = diff --cached
+	
+	# Add
+	a = add
+	aa = add --all
+	ap = add --patch
+	
+	# Branch
+	b = branch
+	ba = branch --all
+	
+	# Commit
+	c = commit
+	cm = commit -m
+	ca = commit --amend
+	can = commit --amend --no-edit
+	
+	# Checkout
+	co = checkout
+	cb = checkout -b
+	
+	# Push/Pull
+	p = push
+	pf = push --force
+	pl = pull
+	plr = pull --rebase
+	
+	# Log
+	l = log
+	lo = log --oneline
+	log = log --oneline --graph --decorate --all
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	
+	# Fetch
+	f = fetch
+	fa = fetch --all
+	
+	# Stash
+	st = stash
+	stp = stash pop
+	stl = stash list
+	
+	# Remote
+	r = remote
+	rv = remote -v
+	rsh = remote show
+	
+	# Merge/Rebase
+	m = merge
+	rb = rebase
+	rbi = rebase --interactive
+	
+	# Clone/Switch
+	cl = clone
+	sw = switch
+	swc = switch -c
+	
+	# File operations
+	rm = rm
+	mv = mv
+	sh = show
+	bl = blame
+	
+	# Tag
+	tag = tag
+	ta = tag -a
+	td = tag -d
+	tl = tag -l
+	
+	# Restore
+	rs = restore
+	rss = restore --staged
+	
+	# Clean
+	cln = clean
+	clnf = clean -fd
+	
+	# Submodule
+	sub = submodule
+	suba = submodule add
+	subu = submodule update
+	subi = submodule init
+	
+	# Combined operations (using shell functions to handle arguments)
+	acm = !git add -A && git commit -m
+	cof = !f() { git checkout "$@" && git fetch; }; f
+	plom = !git pull origin "$(git branch --show-current)"
+	pom = !git push origin "$(git branch --show-current)"
+	aliases = !git config --get-regexp alias | bat
+    psu = "!f() { b=$(git symbolic-ref --short HEAD); git push --set-upstream origin \"$b\"; }; f"
+
+
+[core]
+	pager = bat
