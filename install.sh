@@ -21,7 +21,7 @@ ln -sf "$DOTFILES/cursor/keybindings.json" ~/Library/Application\ Support/Cursor
 echo "==> Applying macOS defaults"
 source "$DOTFILES/macos/defaults.sh"
 
-echo "==> Mac App Store apps"
+echo "==> Optional apps"
 source "$DOTFILES/macos/appstore.sh"
 
 echo "==> Setting up Node via fnm"
