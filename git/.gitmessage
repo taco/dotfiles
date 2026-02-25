@@ -1,0 +1,7 @@
+
+
+# <type>: <subject>
+#
+# Types: feat, fix, refactor, docs, test, chore, style, perf
+# Subject: imperative mood, no period, max 50 chars
+# Body: wrap at 72 chars, explain what and why (not how)
