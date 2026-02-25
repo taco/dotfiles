@@ -21,8 +21,6 @@ casks=(
   "cursor|Cursor|AI-powered code editor"
   "discord|Discord|Voice, video, and text chat"
   "docker|Docker Desktop|Container platform for building and running apps"
-  "google-chrome|Google Chrome|Web browser"
-  "iterm2|iTerm2|Terminal emulator with advanced features"
   "multiviewer|MultiViewer|Watch multiple F1 streams simultaneously"
   "signal|Signal|End-to-end encrypted messaging"
   "wootility|Wootility|Configuration tool for Wooting keyboards"
