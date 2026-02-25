@@ -18,6 +18,9 @@ mkdir -p ~/Library/Application\ Support/Cursor/User
 ln -sf "$DOTFILES/cursor/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
 ln -sf "$DOTFILES/cursor/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
 
+echo "==> Applying macOS defaults"
+source "$DOTFILES/macos/defaults.sh"
+
 echo "==> Setting up Node via fnm"
 fnm install 22
 
