@@ -17,6 +17,8 @@ ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
 mkdir -p ~/Library/Application\ Support/Cursor/User
 ln -sf "$DOTFILES/cursor/settings.json" ~/Library/Application\ Support/Cursor/User/settings.json
 ln -sf "$DOTFILES/cursor/keybindings.json" ~/Library/Application\ Support/Cursor/User/keybindings.json
+mkdir -p ~/.config/linearmouse
+ln -sf "$DOTFILES/linearmouse/linearmouse.json" ~/.config/linearmouse/linearmouse.json
 
 echo "==> Applying macOS defaults"
 source "$DOTFILES/macos/defaults.sh"

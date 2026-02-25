@@ -86,6 +86,14 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 
 ###############################################################################
+# iTerm2                                                                      #
+###############################################################################
+
+# Load preferences from dotfiles directory
+defaults write com.googlecode.iterm2 PrefsCustomFolder -string "$HOME/code/dotfiles/iterm2"
+defaults write com.googlecode.iterm2 LoadPrefsFromCustomFolder -bool true
+
+###############################################################################
 # Hot Corners                                                                 #
 # Values: 0=none, 2=Mission Control, 3=App Windows, 4=Desktop, 5=Screensaver #
 #         6=Disable Screensaver, 10=Put Display to Sleep, 13=Lock Screen      #
