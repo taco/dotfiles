@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(defaults read:*)",
+      "Bash(hidutil property:*)",
+      "Bash(mas search:*)",
+      "Bash(mas list:*)",
+      "Bash(which mas:*)",
+      "Bash(brew search:*)",
+      "Bash(brew bundle:*)",
+      "Bash(cursor:*)",
+      "Bash(brew leaves:*)",
+      "Bash(npm config:*)"
+    ]
+  }
+}
