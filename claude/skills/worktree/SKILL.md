@@ -92,17 +92,13 @@ If no recognized prefix, default to `feat/`:
 
 ### 3. Create worktree
 
-If a `worktree-setup.sh` script exists in the repo root, use it:
+Run the global worktree setup script:
 
 ```bash
-./worktree-setup.sh ../<repo>-<slug> <branch>
+~/.claude/worktree-setup.sh ../<repo>-<slug> <branch>
 ```
 
-Otherwise, create the worktree directly:
-
-```bash
-git worktree add -b <branch> ../<repo>-<slug>
-```
+This script creates the worktree, symlinks env files and certs, sets up Claude Code permissions/memory sharing, and runs the project's `worktree-post-setup.sh` if one exists.
 
 ### 4. Store tracking state
 
