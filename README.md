@@ -8,7 +8,7 @@ Personal macOS dotfiles managed with symlinks.
 
 **Git** — Config with 40+ aliases, global gitignore, commit message template
 
-**Editors** — Claude Code (settings, plugins, statusline), Cursor (Gruvbox theme, keybindings)
+**Editors** — Claude Code (settings, plugins, statusline, global skills), Cursor (Gruvbox theme, keybindings)
 
 **Terminal** — iTerm2 with Gruvbox color scheme, Nerd Fonts (Fira Code, Hack, JetBrains Mono, Meslo LG)
 
@@ -25,7 +25,7 @@ Personal macOS dotfiles managed with symlinks.
 | `zsh/` | `.zshrc`, `aliases.zsh` |
 | `git/` | `.gitconfig`, `.gitignore_global`, `.gitmessage` |
 | `ssh/` | SSH host config (win, wsl, github) |
-| `claude/` | Claude Code settings and statusline script |
+| `claude/` | Claude Code settings, statusline script, and global skills |
 | `claude-desktop/` | Claude Desktop config |
 | `cursor/` | Cursor editor settings and keybindings |
 | `starship/` | Starship prompt config |

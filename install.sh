@@ -18,6 +18,7 @@ ln -sf "$DOTFILES/ssh/.ssh/config" ~/.ssh/config
 mkdir -p ~/.claude
 ln -sf "$DOTFILES/claude/settings.json" ~/.claude/settings.json
 ln -sf "$DOTFILES/claude/statusline.sh" ~/.claude/statusline.sh
+ln -sfn "$DOTFILES/claude/skills" ~/.claude/skills
 mkdir -p ~/.config/starship
 ln -sf "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
 mkdir -p ~/.config/gh
