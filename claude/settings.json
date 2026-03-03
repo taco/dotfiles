@@ -29,7 +29,7 @@
       "Bash(node --version:*)",
       "Bash(npx tailwindcss:*)",
       "Bash(npx tsc:*)",
-      "Bash(/Users/travisj/.claude/statusline.sh)",
+      "Bash(~/.claude/statusline.sh)",
       "Skill(updatedocs)",
       "Skill(e2e)",
       "Skill(verify)",

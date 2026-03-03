@@ -12,18 +12,16 @@ setopt HIST_REDUCE_BLANKS
 setopt AUTO_CD
 setopt INTERACTIVE_COMMENTS
 
-plugins=(
-  git
-  history-substring-search
-  brew
-  macos
-  copypath
-  extract
-)
+# OS-specific config (plugins, brew shellenv, EDITOR, etc.)
+OS="$(uname -s)"
+if [ "$OS" = "Darwin" ]; then
+  source "$HOME/.zshrc.darwin"
+else
+  source "$HOME/.zshrc.linux"
+fi
 
 source $ZSH/oh-my-zsh.sh
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(fnm env --use-on-cd)"
 
@@ -33,15 +31,16 @@ eval "$(pnpm completion zsh)"
 # Aliases and functions
 source "$HOME/.aliases.zsh"
 
-export PATH="/Users/travisj/.amp/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-
-export VISUAL="cursor -w"
-export EDITOR="cursor -w"
 
 # zoxide (smart cd replacement — use `z` to jump to directories)
 eval "$(zoxide init zsh)"
 
 # Fish-like plugins (must be after oh-my-zsh)
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ "$OS" = "Darwin" ]; then
+  source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+  source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+else
+  source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null || true
+  source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null || true
+fi
